@@ -14,7 +14,8 @@ const Sidebar = () => {
     if (screenSize <= 900) setActiveMenu(false);
   };
 
-  const activeLink = "flex items-center gap-5 pl-4 mt-3 pb-2.5 rounded-lg text-white text-md m-2";
+  const activeLink =
+    "flex items-center gap-5 pl-4 mt-3 pb-2.5 rounded-lg text-white text-md m-2 bg-blue-500";
   const normalLink =
     "flex items-center gap-5 pl-4 mt-3 pb-2.5 rounded-lg text-white text-md text-gray-700 dark:text-gray-2000 dark:hover:text-black hover:bg-light-gray m-2";
 
@@ -43,7 +44,7 @@ const Sidebar = () => {
           <div>
             {links.map((item) => (
               <div key="item.title">
-                <p className="m-3 mt-4 text-gray-400">{item.title}</p>
+                <p className="m-3 mt-4 text-gray-400 flex">{item.title}</p>
                 {item.links.map((link) => (
                   <NavLink
                     to={`/${link.name}`}

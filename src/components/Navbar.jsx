@@ -65,9 +65,7 @@ const Navbar = () => {
         <NavButton
           title="Cart"
           customFunc={() => {
-            {
-              handleClick("cart");
-            }
+            handleClick("cart");
           }}
           color="blue"
           icon={<FiShoppingCart />}
