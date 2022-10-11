@@ -1,3 +1,5 @@
+import { SparklineComponent, Inject, SparklineTooltip } from "@syncfusion/ej2-react-charts";
+
 const SparkLine = () => {
   return <div>SparkLine</div>;
 };
